@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="/js/utils.js"></script>
+    <script src="/js/index.js"></script>
+    <title>Web Client</title>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome">
+            <h1> Welcome to AI Darija translator </h1>
+        </div>
+        <div class="chat-container">
+            <div class="chat-box" id="chat-box">
+                <div class="bot-message">Say Anything and i will translate ...</div>
+            </div>
+            <div class="prompt">
+                <input type="text" id="prompt" placeholder="Enter the text to translate ..." onkeypress="handleKeyPress(event)" >
+                <div onclick="sendPrompt()">
+                    <img src="/icons/send.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
